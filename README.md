@@ -12,20 +12,23 @@ Poderoso Software
 >
 > y asi se cae en la miseria, ni idea de que hace el pana
 >
-> y asi hace un italic *ASI!*
+> y asi hace un italic *italianizado!*
 
   **Piensalo...**
   
   ### Crazy good software
+  
   * Rapido
   + seguro
   - confiable ? 
   
   ### NUMEROS! 
-  1. uno
-  2. dos
-  3. tres!! omg tres!
   
-  es mas.. asi luce el codigo en ruby
+  1. uno contando
+  2. dos
+  3. tres
+  
+  es mas.. asi luce el codigo en ruby 
   `puts 'hello world' `
+  
   
