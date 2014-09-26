@@ -57,10 +57,16 @@ class Invoices::PurchasesController < ApplicationController
   # DELETE /purchases/1
   # DELETE /purchases/1.json
   def destroy
-    @purchase.destroy
-    respond_to do |format|
-      format.html { redirect_to purchases_url, notice: 'Purchase was successfully destroyed.' }
-      format.json { head :no_content }
+    @invoice = Invoice.find(params[:invoice_id])
+    @purchase = Purchase.find(params[:id] )
+    title = @purchase.name 
+    
+    if @purchase.destroy 
+      flash[:notice] = "\ #{title} was deleted succesfully. "
+      redirect_to @invoice
+    else
+      flash[:error] = "there was a error deleting the purchase. "
+      render :show
     end
   end
 
